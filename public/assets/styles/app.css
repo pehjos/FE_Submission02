@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter.ttf');
+}
+
+body {
+    background-color: #d8d8d8;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1d1f24;
+    letter-spacing: 0.8px;
+}
+
+.hidden {
+    display: none;
+}

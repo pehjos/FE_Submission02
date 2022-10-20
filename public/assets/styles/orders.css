@@ -1,0 +1,38 @@
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 0.3rem;
+    background: transparent;
+    border: 1.5px solid #000;
+    margin-left: 0.5rem;
+}
+
+.pagination {
+    padding: 1rem 0 1rem 0;
+}
+
+.processing {
+    color: #e72845;
+}
+
+.delivered {
+    color: #5eb404;
+}
+
+.mouse-pointer {
+    cursor: pointer;
+}
+
+.capitalize-first.m_title {
+    text-transform: capitalize;
+}

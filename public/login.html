@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/favicon.ico"
+        />
+        <link rel="stylesheet" href="./assets/styles/app.css" />
+        <link rel="stylesheet" href="./assets/styles/login.css" />
+        <title>Freddys - Login</title>
+    </head>
+    <body>
+    
+        <main>
+            <div class="heading">
+                <h1>Freddy's Artisanal Halloween Candy Shop</h1>
+                <img src="assets/images/logo.svg" alt="" srcset="" />
+            </div>
+            <form action="POST">
+                <input
+                    type="text"
+                    placeholder="username"
+                    required
+                    name="username"
+                
+                />
+                <input
+                    type="password"
+                    placeholder="********"
+                    required
+                    name="password"
+                  
+                />
+                <button type="submit">Login</button>
+            </form>
+        </main>
+        <div class="error hidden">Invalid Credentials</div>
+        
+    </body>
+    <script src="./scripts/helpers.js"></script>
+        <script src="./scripts/auth.js"></script>
+</html>

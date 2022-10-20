@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1d1f24;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    padding: 2rem;
+    border: 2.5px solid #979797;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.table-section {
+    border: 2px solid #b7b7b7;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size: 0.6rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+td {
+    padding-top: 1rem;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+    /* border: 1px solid rgb(224, 224, 224); */
+    border-collapse: collapse;
+    padding: 8px;
+}

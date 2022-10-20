@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    border: 7px #979797 solid;
+    padding: 1.5rem;
+    max-width: 320px;
+}
+
+img {
+    width: 6rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.heading {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form button,
+input {
+    width: 100%;
+    padding: 0.5rem;
+    background: transparent;
+    border: 2.5px solid #b9b9b9;
+    margin-bottom: 1.7rem;
+    font-size: 1rem;
+    outline-width: 0;
+
+}
+input{
+
+ font-size: 20px;   
+}
+form button {
+    margin-top: 1.4rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    border: 2.5px solid #979797;
+}
+
+.error {
+    position: absolute;
+   bottom: 19px;
+    padding: 1rem 2rem 1rem 2rem;
+border: 1px solid lightgrey;
+    background: red;
+    color: #fff;
+}

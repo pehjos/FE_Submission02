@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/favicon.ico"
+        />
+        <link rel="stylesheet" href="./assets/styles/app.css" />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <link rel="stylesheet" href="./assets/styles/dashboard.css" />
+        <title>Freddys - Dashboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo.svg" alt="logo" class="logo" />
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./orders.html">Orders</a></li>
+                    <li><a onclick="logout()" class="logout">Logout</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1 class="heading">Dashboard</h1>
+                <section class="card-section">
+                    <div class="card">
+                        <div class="card-heading">Today</div>
+                        <div class="card-body">$1456 / 9 orders</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-heading">Last Week</div>
+                        <div class="card-body">$34K / 120 orders</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-heading">Last Month</div>
+                        <div class="card-body">$95K / 876 orders</div>
+                    </div>
+                </section>
+                <section class="graph-section">
+                    <div class="graph-section-head heading">
+                        <h2 class="chart-head">Revenue (last 7 days)</h2>
+                        <!-- <h2 class="hidden">Revenue (Last 12 months)</h2> -->
+                        <label class="switch">
+                            <input type="checkbox" class="toggle" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-container">
+                            <div class="days-chart">
+                                <canvas id="daysChart" width="100%"></canvas>
+                            </div>
+                            <div class="hidden months-chart">
+                                <canvas
+                                    id="monthsChart"
+                                    width="100%"
+                                    class="hidden"
+                                ></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="heading">Bestsellers</h2>
+                    <div class="table-section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th># Units Sold</th>
+                                    <th>Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="./scripts/helpers.js"></script>
+        <script src="./scripts/Authorize.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./scripts/dashboard.js"></script>
+    </body>
+</html>
